@@ -1,4 +1,4 @@
-# Sovendus-Events-API-for-Voucher-Network-and-Checkout-Benefits
+# Events API for Sovendus Voucher Network & Checkout Benefits
 
 ## PostMessage Events (sovApi)
 
