@@ -24,12 +24,12 @@ window.addEventListener("message", (event) => {
 
 ## Following events are currently supported:
 
-| channel                | payload                                        | description                                                    |
-| ---------------------- | ---------------------------------------------- | -------------------------------------------------------------- |
-| `sovendus:overlay`     | {action: "close", version: “v1”}               | Overlay is closed.                                             |
-| `sovendus:overlay`     | {action: "collapse", version: “v1”}            | Overlay is collapsed to a floating button.                     |
-| `sovendus:overlay`     | {action: "expand", version: “v1”}              | Overlay is shown in its expanded form.                         |
-| `sovendus:integration` | {action: "openInNativeBrowser", version: “v1”} | In case an external link has to be opened on a native browser. |
+| channel                | payload                                                                                     | description                                                    |
+| ---------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `sovendus:overlay`     | {action: "close", version: “v1”}                                                            | Overlay is closed.                                             |
+| `sovendus:overlay`     | {action: "collapse", version: “v1”}                                                         | Overlay is collapsed to a floating button.                     |
+| `sovendus:overlay`     | {action: "expand", version: “v1”}                                                           | Overlay is shown in its expanded form.                         |
+| `sovendus:integration` | {action: "openInNativeBrowser", url: "example.com/url-to-open-in-a-new-tab", version: “v1”} | In case an external link has to be opened on a native browser. |
 
 Though we support "latest" as a version, we do not recommend using it to avoid breaking your site, because the payload may change in future versions. The current latest version is part of the payload (v1, v2, …).
 
